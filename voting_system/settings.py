@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
 ]
-
+AUTH_USER_MODEL = 'elections.User'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
