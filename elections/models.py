@@ -16,7 +16,7 @@ class User(AbstractUser):
 class Post(models.Model):
     post_name =models.CharField(max_length=100)
     def __str__(self):
-        return self.name
+        return self.post_name
     
 class Candidate(models.Model):
 
@@ -35,7 +35,7 @@ class Candidate(models.Model):
 
    
     def __str__(self):
-        return f"{self.user.username} - {self.post.name}"
+        return f"{self.user.username} - {self.post.post_name}"
     
 class Vote(models.Model):
 
